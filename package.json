@@ -1,0 +1,19 @@
+{
+  "name": "com.elicxir.input",
+  "version": "1.0.0",
+  "displayName": "Input Manager",
+  "description": "simple manager of new input system",
+  "author": {
+    "name": "ELICXIR"
+  },
+  "dependencies": {
+    "com.unity.inputsystem": "1.3.0"
+  },
+  "samples": [
+    {
+        "displayName": "Input Manager",
+        "description": "Assets for easy installing Input Manager",
+        "path": "Samples~/InputManager"
+    }
+]
+}
