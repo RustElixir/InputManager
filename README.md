@@ -9,7 +9,7 @@ Improved package for Unity Input System
 ## Install
 Unity InputSystem (ver 1.3.0 or later) must be installed before adding this package.
 
-### UniTask
+### InputSystem
 Window -> Package Manager -> AddPackage fom git url
 
 com.unity.inputsystem@1.3.0
