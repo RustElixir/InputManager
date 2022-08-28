@@ -10,6 +10,8 @@ namespace InputManager
     {
         public static InputManager Input_Manager;
 
+        public InputData LatestInputData;
+
         void Awake()
         {
             print("test");
@@ -73,7 +75,10 @@ namespace InputManager
             }
 
             framecount++;
-            return new InputData(inputButtons, framecount, datetime);
+
+            var data = new InputData(inputButtons, framecount, datetime);
+            LatestInputData = data;
+            return data;
         }
 
 
