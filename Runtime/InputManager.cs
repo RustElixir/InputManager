@@ -10,8 +10,10 @@ namespace InputManager
     {
         public static InputManager Input_Manager;
 
-        public void Init()
+        void Awake()
         {
+            print("test");
+
             if (Input_Manager == null)
             {
                 Input_Manager = this;
@@ -21,6 +23,10 @@ namespace InputManager
             {
                 Destroy(gameObject);
             }
+        }
+
+        public void Init()
+        {
 
             framecount = 0;
             List<string> datas = GetInputList();

@@ -50,6 +50,19 @@ namespace InputManager
         }
 
 
+        public string KeyList()
+        {
+            string res = "Input ID List:\n";
+
+            foreach (var item in keyValues.Keys)
+            {
+                string d = $"{item},";
+
+                res += d;
+            }
+            return res;
+        }
+
         public string InputLog()
         {
             string res = "InputLog:\n";
