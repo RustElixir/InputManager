@@ -1,26 +1,17 @@
 # InputManager
 Improved package for Unity Input System
 
-
-
-
-# How to Use
-
 ## Install
 
-
-
-## Install
-Unity InputSystem (ver 1.3.0 or later) must be installed before adding this package.
-
-### InputSystem
+### Install Dependency
 Window -> Package Manager -> AddPackage fom git url
+|Package|version|URL|
+|---|---|---|
+|InputSystem|1.4.3|com.unity.inputsystem@1.4.3
+|UniTask|2.3.1|https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask|
 
-com.unity.inputsystem@1.3.0
-
-### InputManager
+### Install InputManager
 Window -> Package Manager -> AddPackage fom git url
+https://github.com/RustElixir/InputManager
 
-https://github.com/elicxir/InputManager
-
-By installing Input Manager from the sample, the necessary files are generated under the Asset folder.
+## How to Use
