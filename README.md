@@ -31,9 +31,26 @@ InputData is data that holds input information for that frame.
 SingleInputData can be retrieved based on InputData and id.
 SingleInputData is information about a single button input.
 
-GetInputData()
+```Csharp
+//Get Latest InputData
+var inputdata = GetInputData();
+```
+
 
 ### SingleInputData
+SingleInputData is information about a single button input.
+
+```Csharp
+//Get Latest InputData
+var inputdata = GetInputData();
+
+//Get Single Input Data of id:"button1"
+
+var button1 = inputdata.GetSingleInputData("button1");
+
+//Get Arrow Key Input as Vector2
+var arrowinput = inputdata.GetArrowInput();
+```
 
 SingleInputData contains the following information
 
