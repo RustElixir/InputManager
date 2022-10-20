@@ -12,6 +12,6 @@ Window -> Package Manager -> AddPackage fom git url
 
 ### Install InputManager
 Window -> Package Manager -> AddPackage fom git url
-https://github.com/RustElixir/InputManager
+https://github.com/elicxir/InputManager.git
 
 ## How to Use
