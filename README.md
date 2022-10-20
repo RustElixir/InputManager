@@ -1,6 +1,15 @@
 # InputManager
 Improved package for Unity Input System
 
+## Feature
+- Easily handle inputs utilizing the Action of Input System
+
+- the Action of Input System makes it easy to handle input from a keyboard or several types of gamepads
+
+- Focus on handling BUTTON input
+
+- Mouse and touchpad input is not supported <br>(can be used together if you make it on your own)
+
 ## Install
 
 ### Install Dependency
@@ -15,3 +24,28 @@ Window -> Package Manager -> AddPackage fom git url
 https://github.com/elicxir/InputManager.git
 
 ## How to Use
+
+### InputData
+InputData is data that holds input information for that frame.
+
+SingleInputData can be retrieved based on InputData and id.
+SingleInputData is information about a single button input.
+
+GetInputData()
+
+### SingleInputData
+
+SingleInputData contains the following information
+
+|  Property (readonly)  |  Type  | Description |
+| ---- | ---- | ---- |
+|  ID  |  string  |Corresponding Action name|
+|  isPressed  |  bool  |Whether the button is pressed or not|
+|  isPressedThisFrame  |  bool  |Whether or not the moment the button is pressed|
+|  isReleasedThisFrame  |  bool  |Whether or not the moment the button is released|
+|  PressTimer  |  float  |Time since isPressedThisFrame last set to True|
+|  HoldTimer  |  float  |Time to keep pressing |
+|  ReleaseTimer  |  float  |Time since isReleasedThisFrame last set to True|
+
+(All time units are in seconds. )
+
